@@ -89,6 +89,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "Maison Relocation Concierge" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "Maison — Luxury Relocation Concierge" },
+      { name: "twitter:title", content: "Maison — Luxury Relocation Concierge" },
+      { name: "description", content: "A luxury relocation concierge website offering premium white-glove moving and setup services." },
+      { property: "og:description", content: "A luxury relocation concierge website offering premium white-glove moving and setup services." },
+      { name: "twitter:description", content: "A luxury relocation concierge website offering premium white-glove moving and setup services." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c3e9ceec-4252-421e-9a66-165c19ae58f8/id-preview-6a93c14f--1fb99d5c-eb6a-46b2-b448-a2e032602667.lovable.app-1781559349605.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c3e9ceec-4252-421e-9a66-165c19ae58f8/id-preview-6a93c14f--1fb99d5c-eb6a-46b2-b448-a2e032602667.lovable.app-1781559349605.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
