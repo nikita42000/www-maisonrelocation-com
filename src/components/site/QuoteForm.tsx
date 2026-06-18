@@ -30,11 +30,12 @@ export function QuoteForm({ source = "quote_form", compact = false }: Props) {
     };
 
     setSubmitting(true);
+    const form = e.currentTarget;
     try {
       await submit({ data: payload });
+      form.reset();
       setSent(true);
-      toast.success("Thank you. A concierge will be in touch shortly.");
-      (e.target as HTMLFormElement).reset();
+      toast.success("Thank you — we've received your request.");
     } catch (err) {
       console.error(err);
       toast.error("Something went wrong. Please try again or email us directly.");
@@ -43,13 +44,22 @@ export function QuoteForm({ source = "quote_form", compact = false }: Props) {
     }
   }
 
-  if (sent && compact) {
+  if (sent) {
     return (
-      <div className="p-10 border border-border text-center">
-        <p className="font-serif text-2xl">Thank you.</p>
-        <p className="mt-3 text-sm text-muted-foreground">
-          A concierge will reach out within one business day.
+      <div className="p-12 border border-border text-center">
+        <p className="font-serif text-3xl">Thank you.</p>
+        <p className="mt-4 text-sm text-muted-foreground max-w-md mx-auto">
+          We've received your request and will be in touch shortly.
         </p>
+        {!compact && (
+          <button
+            type="button"
+            onClick={() => setSent(false)}
+            className="mt-8 text-xs tracking-[0.3em] uppercase underline underline-offset-4 hover:no-underline"
+          >
+            Submit another request
+          </button>
+        )}
       </div>
     );
   }
