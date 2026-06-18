@@ -73,7 +73,7 @@ const services = [
       "Fine art and antiquities handling",
       "Wine collection transport with provenance",
       "Concert-grade instrument relocation",
-      "Enclosed automobile transport, international",
+      "Enclosed automobile transport",
     ],
   },
 ];
