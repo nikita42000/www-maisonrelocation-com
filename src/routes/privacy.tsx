@@ -4,21 +4,22 @@ import { Reveal } from "@/components/site/Reveal";
 export const Route = createFileRoute("/privacy")({
   head: () => ({
     meta: [
-      { title: "Privacy Policy — Maison Relocation Concierge" },
+      { title: "Privacy Policy" },
       {
         name: "description",
         content:
-          "Maison Relocation Concierge privacy policy: how we collect, use, protect, and retain your personal data.",
+          "Read the Maison Relocation Privacy Policy. Learn how we collect, use, and protect your personal data during your relocation journey.",
       },
-      { property: "og:title", content: "Privacy Policy — Maison Relocation Concierge" },
+      { property: "og:title", content: "Privacy Policy" },
       {
         property: "og:description",
         content:
-          "Maison Relocation Concierge privacy policy: how we collect, use, protect, and retain your personal data.",
+          "Read the Maison Relocation Privacy Policy. Learn how we collect, use, and protect your personal data during your relocation journey.",
       },
-      { property: "og:url", content: "/privacy" },
+      { property: "og:url", content: "https://maisonrelocation.com/privacy" },
+      { name: "robots", content: "index, follow" },
     ],
-    links: [{ rel: "canonical", href: "/privacy" }],
+    links: [{ rel: "canonical", href: "https://maisonrelocation.com/privacy" }],
   }),
   component: PrivacyPage,
 });

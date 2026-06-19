@@ -4,21 +4,22 @@ import { Reveal } from "@/components/site/Reveal";
 export const Route = createFileRoute("/terms")({
   head: () => ({
     meta: [
-      { title: "Terms of Service — Maison Relocation Concierge" },
+      { title: "Terms of Service " },
       {
         name: "description",
         content:
-          "Maison Relocation Concierge terms of service: scope, obligations, confidentiality, payment, and liability.",
+          "Maison Relocation Terms of Service. Understand the scope of our concierge relocation services, confidentiality commitments, and client obligations.",
       },
-      { property: "og:title", content: "Terms of Service — Maison Relocation Concierge" },
+      { property: "og:title", content: "Terms of Service " },
       {
         property: "og:description",
         content:
-          "Maison Relocation Concierge terms of service: scope, obligations, confidentiality, payment, and liability.",
+          "Maison Relocation Terms of Service. Understand the scope of our concierge relocation services, confidentiality commitments, and client obligations.",
       },
-      { property: "og:url", content: "/terms" },
+      { property: "og:url", content: "https://maisonrelocation.com/terms" },
+      { name: "robots", content: "index, follow" },
     ],
-    links: [{ rel: "canonical", href: "/terms" }],
+    links: [{ rel: "canonical", href: "https://maisonrelocation.com/terms" }],
   }),
   component: TermsPage,
 });
