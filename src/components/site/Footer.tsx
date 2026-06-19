@@ -3,7 +3,7 @@ import { Link } from "@tanstack/react-router";
 export function Footer() {
   return (
     <footer className="border-t border-border mt-32">
-      <div className="container-luxe py-20 grid gap-16 md:grid-cols-4">
+      <div className="container-luxe py-20 grid gap-16 md:grid-cols-5">
         <div className="md:col-span-2">
           <div className="flex items-baseline gap-2">
             <span className="font-serif text-3xl tracking-tight">Maison</span>
@@ -24,6 +24,14 @@ export function Footer() {
             <li><Link to="/about" className="link-underline">About</Link></li>
             <li><Link to="/services" className="link-underline">Services</Link></li>
             <li><Link to="/contact" className="link-underline">Contact</Link></li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="eyebrow mb-5">Legal</p>
+          <ul className="space-y-3 text-sm">
+            <li><Link to="/privacy" className="link-underline">Privacy Policy</Link></li>
+            <li><Link to="/terms" className="link-underline">Terms of Service</Link></li>
           </ul>
         </div>
 
