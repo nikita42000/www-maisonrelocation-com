@@ -65,7 +65,7 @@ function AboutPage() {
           <Reveal delay={150} className="md:col-span-6 md:col-start-7 space-y-6 text-base leading-relaxed text-foreground/80">
             <p>
               We began in 2009 as a discreet referral service for families
-              relocating between New York, London, and the Hamptons. Word travelled.
+              relocating between New York, San Diego, and Miami. Word travelled.
               Today, Maison operates a global network of vetted specialists who
               answer to a single dedicated concierge — your concierge.
             </p>
