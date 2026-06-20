@@ -52,6 +52,8 @@ function AboutPage() {
             </p>
           </Reveal>
         </div>
+      </section>
+
       <section className="py-32 md:py-44">
         <div className="container-luxe grid md:grid-cols-12 gap-12">
           <Reveal className="md:col-span-5">
