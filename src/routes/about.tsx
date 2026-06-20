@@ -54,22 +54,6 @@ function AboutPage() {
           </Reveal>
         </div>
       </section>
-
-      <section className="container-luxe">
-        <Reveal>
-          <div className="aspect-[16/9] overflow-hidden">
-            <img
-              src={aboutImg}
-              alt="Maison team arriving at a private residence"
-              width={1600}
-              height={1100}
-              className="h-full w-full object-cover"
-            />
-          </div>
-        </Reveal>
-      </section>
-
-      <section className="py-32 md:py-44">
         <div className="container-luxe grid md:grid-cols-12 gap-12">
           <Reveal className="md:col-span-5">
             <p className="eyebrow">Our Story</p>
