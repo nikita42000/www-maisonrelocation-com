@@ -1,5 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import aboutImg from "@/assets/about.jpg";
 import { Reveal } from "@/components/site/Reveal";
 
 export const Route = createFileRoute("/about")({
@@ -53,20 +52,6 @@ function AboutPage() {
             </p>
           </Reveal>
         </div>
-      </section>
-
-      <section className="container-luxe">
-        <Reveal>
-          <div className="aspect-[16/9] overflow-hidden">
-            <img
-              src={aboutImg}
-              alt="Maison team arriving at a private residence"
-              width={1600}
-              height={1100}
-              className="h-full w-full object-cover"
-            />
-          </div>
-        </Reveal>
       </section>
 
       <section className="py-32 md:py-44">
