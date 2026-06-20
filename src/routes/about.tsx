@@ -1,5 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import aboutImg from "@/assets/about.jpg";
 import { Reveal } from "@/components/site/Reveal";
 
 export const Route = createFileRoute("/about")({
@@ -53,7 +52,7 @@ function AboutPage() {
             </p>
           </Reveal>
         </div>
-      </section>
+      <section className="py-32 md:py-44">
         <div className="container-luxe grid md:grid-cols-12 gap-12">
           <Reveal className="md:col-span-5">
             <p className="eyebrow">Our Story</p>
